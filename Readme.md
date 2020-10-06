@@ -7,6 +7,14 @@ Simple Plugin for Mosquitto which enables authentication and authorisation via J
 
 Requires at least Mosquitto v1.6.3
 
+## Docker ##
+The Docker image takes [eclipse-mosquitto](https://hub.docker.com/_/eclipse-mosquitto) and adds [mosquitto-jwt-auth](https://github.com/wiomoc/mosquitto-jwt-auth) on top.
+
+### Settings ###
+
+By default, the secret key is expected at `/run/secrets/jwt_key`.
+The default config used (`mosquitto_docker.conf`) specifies the `HS256` algorithm.
+
 ## Building
 **Prebuild** version is available [here](https://github.com/wiomoc/mosquitto-jwt-auth/releases/latest)
 
